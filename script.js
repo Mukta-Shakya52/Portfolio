@@ -1,12 +1,9 @@
-// 🔥 AOS INIT (scroll animations)
 AOS.init({
     duration: 1000,
     once: true,
     easing: "ease-in-out"
 });
 
-
-// ⌨️ Typing Effect (Smooth + Bug Fix)
 const text = ["Engineering Enthusiast", "Problem Solver", "Developer"];
 let i = 0, j = 0;
 let current = "";
@@ -36,10 +33,9 @@ function type() {
 type();
 
 
-// 🚀 Smooth Scroll to Section (Better offset for navbar)
 function scrollToSection(id) {
     const element = document.getElementById(id);
-    const offset = 80; // adjust if navbar height changes
+    const offset = 80;
 
     const bodyRect = document.body.getBoundingClientRect().top;
     const elementRect = element.getBoundingClientRect().top;
@@ -51,9 +47,6 @@ function scrollToSection(id) {
         behavior: "smooth"
     });
 }
-
-
-// ⬆️ Back to Top Button (Smooth + Fade)
 const topBtn = document.getElementById("topBtn");
 
 window.addEventListener("scroll", () => {
@@ -74,7 +67,6 @@ function scrollToTop() {
 }
 
 
-// 🌗 Dark/Light Mode Toggle (FIXED - safe check)
 const toggleBtn = document.getElementById("toggle");
 
 if (toggleBtn) {
@@ -84,13 +76,13 @@ if (toggleBtn) {
 }
 
 
-// ✨ PARTICLES BACKGROUND (match your theme now)
+
 tsParticles.load("particles-js", {
     particles: {
         number: { value: 50 },
         size: { value: 2 },
         move: { speed: 1 },
-        color: { value: "#cfff75" }, // changed to match UI
+        color: { value: "#cfff75" }, 
         links: {
             enable: true,
             color: "#cfff75",

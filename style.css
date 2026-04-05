@@ -3,15 +3,15 @@
     --bg-main: #020617;
     --bg-secondary: #0b1120;
 
-    --primary: #00D1FF;      /* bright cyan */
-    --secondary: #3B82F6;    /* blue */
+    --primary: #00D1FF;      
+    --secondary: #3B82F6;    
 
     --soft: #94A3B8;
     --light: #E2E8F0;
 
     --accent: #22C55E;
 
-    --heading-dark: #FFFFFF; /* 🔥 FIXED (main issue) */
+    --heading-dark: #FFFFFF; 
 }
 
 /* RESET */
@@ -81,17 +81,17 @@ nav ul li a:hover {
 .hero h1 {
     background: linear-gradient(90deg, #00D1FF, #3B82F6);
 
-    background-clip: text;           /* standard */
-    -webkit-background-clip: text;   /* required for Chrome */
+    background-clip: text;           
+    -webkit-background-clip: text;  
 
-    color: transparent;              /* fallback */
-    -webkit-text-fill-color: transparent; /* required */
+    color: transparent;              
+    -webkit-text-fill-color: transparent; 
 }
 
 .hero h2 {
     margin-top: 20px;
     font-size: 24px;
-    color: var(--primary); /* instead of dull color */
+    color: var(--primary); 
 }
 
 /* BUTTON */
@@ -120,7 +120,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* HEADINGS (FIXED TYPO HERE) */
+/* HEADINGS */
 .section h2 {
     font-size: 48px;
     margin-bottom: 20px;
@@ -233,34 +233,4 @@ section {
     .hero, .section {
         padding: 80px 20px;
     }
-}
-.projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  padding: 40px;
-}
-
-.project-card {
-  background: rgba(20, 30, 60, 0.6);
-  border-radius: 20px;
-  padding: 30px;
-  color: #fff;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.1);
-  transition: 0.3s;
-}
-
-.project-card h3 {
-  margin-bottom: 10px;
-}
-
-.project-card span {
-  font-size: 14px;
-  color: #aaa;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 25px rgba(0, 200, 255, 0.5);
 }
